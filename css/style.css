@@ -72,6 +72,7 @@ button {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color);
+    margin-bottom: 50px;
 }
 
 /* header */
@@ -148,6 +149,14 @@ button {
     padding: 60px 0;
 }
 
+.footer .container {
+    display: flex;
+}
+
+.footer-adress-wrap {
+    margin-right: 70px;
+}
+
 .footer-link-logo span {
     color: var(--secondary-text-color);
 }
@@ -183,6 +192,18 @@ button {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+.social-title {
+    padding: 10px 0 0 0;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
     color: var(--secondary-text-color);
 }
 
@@ -264,6 +285,13 @@ button {
     margin-right: 0;
 }
 
+.advantage-list-icon {
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
+
 .advantage-list-item-title {
     margin-bottom: 10px;
 
@@ -289,10 +317,6 @@ button {
     padding-bottom: 94px;
 }
 
-.whatwedo-title {
-    margin-bottom: 50px;
-}
-
 .whatwedo-list {
     display: flex;
 }
@@ -313,15 +337,15 @@ button {
     padding-top: 94px;
 }
 
-.team-title {
-    margin-bottom: 50px;
-}
-
 .team-list {
     display: flex;
 }
 
 .team-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     list-style-type: none;
     margin-right: 30px;
     padding-bottom: 30px;
@@ -338,6 +362,7 @@ button {
 }
 
 .team-list-item-img {
+    max-width: 260px;
     margin-bottom: 30px;
 }
 
@@ -353,12 +378,68 @@ button {
 }
 
 .team-list-item-text {
+    margin-bottom: 16px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
+}
+
+.social-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+
+.social-item:last-child {
+    margin-right: 0;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* customers */
+
+.customers {
+    padding: 94px 0;
+}
+
+.customers-list {
+    display: flex;
+}
+
+.customers-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style-type: none;
+    margin-right: 30px;
+    width: 170px;
+    height: 92px;
+}
+
+.customers-list-icon {
+    width: 106px;
+    height: 60px;
+}
+
+.customers-list-item:last-child {
+    margin-right: 0;
 }
 
 /* portfolio.html  */

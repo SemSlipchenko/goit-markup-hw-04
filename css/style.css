@@ -3,6 +3,7 @@
     --secondary-color: #757575;
     --hover-color: #2196F3;
     --secondary-text-color: #FFFFFF;
+    --primary-icon-color: #AFB1B8;
     --background-color: #2F303A;
     --background-secondary-color: #FFFFFF;
     --background-third-color: #F5F4FA;
@@ -119,10 +120,13 @@ button {
 
 .header-link-wrap {
     margin-left: auto;
+    display: flex;
 }
 
 .header-link {
     color: var(--secondary-color);
+    display: flex;
+    align-items: center;
 }
 
 .header-link:not(:last-child) {
@@ -133,14 +137,13 @@ button {
     color: var(--hover-color);
 }
 
-.header-link-icon-envelope {
-    width: 16px;
-    height: 12px;
+.header-link:hover .header-link-icon {
+    fill: var(--hover-color);
 }
 
-.header-link-icon-smartphone {
-    width: 10px;
-    height: 16px;
+.header-link-icon {
+    fill: var(--secondary-color);
+    margin-right: 10px;
 }
 
 /* footer */

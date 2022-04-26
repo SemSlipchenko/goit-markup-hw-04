@@ -4,6 +4,7 @@
     --hover-color: #2196F3;
     --secondary-text-color: #FFFFFF;
     --primary-icon-color: #AFB1B8;
+    --second-icon-color: rgba(255, 255, 255, 0.1);
     --background-color: #2F303A;
     --background-secondary-color: #FFFFFF;
     --background-third-color: #F5F4FA;
@@ -23,7 +24,7 @@ ul {
     padding: 0;
 }
 
-h1,h2,h3,h4,h5,h6,p,a {
+h1,h2,h3,h4,h5,h6,p,a,img {
     margin: 0;
     padding: 0;
 }
@@ -209,6 +210,14 @@ button {
     text-transform: uppercase;
     
     color: var(--secondary-text-color);
+}
+
+.footer-link {
+    background-color: var(--second-icon-color);
+}
+
+.footer-link > .footer-icon {
+    fill: var(--secondary-text-color);
 }
 
 /* main  */
@@ -409,6 +418,7 @@ button {
 
     width: 44px;
     height: 44px;
+    border-radius: 50%;
     margin-right: 10px;
 }
 
@@ -418,6 +428,21 @@ button {
 
 .social-link {
     padding: 12px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+}
+
+.social-link:hover {
+    background-color: var(--hover-color);
+}
+
+.social-link:hover > .social-icon {
+    fill: var(--background-secondary-color);
+}
+
+.social-icon {
+    fill: var(--primary-icon-color);
 }
 
 /* customers */
@@ -431,24 +456,38 @@ button {
     list-style-type: none;
 }
 
-.customers-list-item {
+.customers-list-item {   
+    margin-right: 30px;
+}
+
+.customers-list-item:last-child {
+    margin-right: 0;
+}
+
+.customers-list-link {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    
-    margin-right: 30px;
     width: 170px;
     height: 92px;
+
+    border: 1px solid var(--primary-icon-color);
+    border-radius: 4px;
+}
+
+.customers-list-link:hover {
+    border: 1px solid var(--hover-color);
 }
 
 .customers-list-icon {
     width: 106px;
     height: 60px;
+    fill: var(--primary-icon-color);
 }
 
-.customers-list-item:last-child {
-    margin-right: 0;
+.customers-list-link:hover > .customers-list-icon {
+    fill: var(--hover-color);
 }
 
 /* portfolio.html  */
@@ -496,6 +535,9 @@ button {
     background-color: var(--hover-color);
     color: var(--secondary-text-color);
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* section portfolio-cards  */
@@ -519,8 +561,14 @@ button {
     flex-basis: calc(100% / 3 - 30px);
 }
 
+.cards-list-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .cards-list-item-img {
-    display: block;
+    display: flex;
 }
 
 .card-description-wrap {

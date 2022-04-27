@@ -115,7 +115,7 @@ button {
     color: var(--main-color);
 }
 
-.header-list-item-link:hover {
+.header-list-item-link:hover, .header-list-item-link:focus {
     color: var(--hover-color);
 }
 
@@ -134,11 +134,11 @@ button {
     margin-right: 50px;
 }
 
-.header-link:hover {
+.header-link:hover, .header-link:focus {
     color: var(--hover-color);
 }
 
-.header-link:hover .header-link-icon {
+.header-link:hover .header-link-icon, .header-link:focus .header-link-icon {
     fill: var(--hover-color);
 }
 
@@ -187,7 +187,7 @@ button {
     margin-bottom: 0;
 }
 
-.footer-link-address:hover {
+.footer-link-address:hover, .footer-link-address:focus {
     color: var(--hover-color);
 }
 
@@ -299,11 +299,15 @@ button {
 }
 
 .advantage-icon-wrap {
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     margin-bottom: 30px;
-    text-align: center;
     background-color: var(--background-third-color);
     border-radius: 4px;
-    padding: 25px 101px;
 }
 
 .advantage-list-item-title {
@@ -347,7 +351,6 @@ button {
 /* team */
 
 .team {
-    max-width: 1600px;
     padding-bottom: 94px;
     padding-top: 94px;
     margin: 0 auto;
@@ -433,11 +436,11 @@ button {
     height: 44px;
 }
 
-.social-link:hover {
+.social-link:hover, .social-link:focus {
     background-color: var(--hover-color);
 }
 
-.social-link:hover > .social-icon {
+.social-link:hover > .social-icon, .social-link:focus > .social-icon {
     fill: var(--background-secondary-color);
 }
 
@@ -486,7 +489,7 @@ button {
     fill: var(--primary-icon-color);
 }
 
-.customers-list-link:hover > .customers-list-icon {
+.customers-list-link:hover > .customers-list-icon, .customers-list-link:focus > .customers-list-icon {
     fill: var(--hover-color);
 }
 
@@ -509,7 +512,7 @@ button {
 
 .portfolio-list-item {
     list-style-type: none;
-    margin-right: 30px;
+    margin-right: 8px;
 }
 
 .portfolio-list-item:last-child {
@@ -531,7 +534,7 @@ button {
     padding: 6px 22px;
 }
 
-.portfolio-btn:hover {
+.portfolio-btn:hover, .portfolio-btn:focus {
     background-color: var(--hover-color);
     color: var(--secondary-text-color);
     cursor: pointer;
